@@ -3,7 +3,7 @@
   "id": "hianime",
   "familyID": "hianime",
   "name": "HiAnimeTV (BETA - Testing only)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimumAppVersion": "2.0.3",
   "contentType": "video",
   "language": "en",
@@ -311,5 +311,5 @@
       ]
     }
   },
-  "releaseNotes": "Experimental candidate. Requires scriptAssignment support, not present in Aroki 2.0.2. Version 2.0.3 is a reserved minimum, not a claim of a released compatible build. Playback unverified here."
+  "releaseNotes": "Candidate 1.0.1 for Aroki 2.0.3+ testing. Extracts mp4 streams from Blogger / GoogleVideo sources via scriptAssignment on fileUrl. Note: Titles using encrypted MegaPlay (source=hianime) or MegaVid (source=embed) fail resolution natively. On physical iOS devices, GoogleVideo streams may encounter 403 Forbidden due to mediaserverd User-Agent stripping of eaua tokens or IP locking."
 }

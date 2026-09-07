@@ -3,23 +3,23 @@
   "repositoryID": "aroki-testing-modules",
   "name": "Testing Modules AR",
   "enabled": true,
-  "generatedAt": 1788796275,
+  "generatedAt": 1788798420,
   "connectors": [
     {
       "id": "hianime",
       "familyID": "hianime",
       "name": "HiAnimeTV (BETA - Testing only)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "minimumAppVersion": "2.0.3",
       "contentType": "video",
       "language": "en",
       "contentRating": "unknown",
       "releaseTrack": "beta",
       "status": "active",
-      "releaseNotes": "Experimental candidate. Requires scriptAssignment support, not present in Aroki 2.0.2. Version 2.0.3 is a reserved minimum, not a claim of a released compatible build. Playback unverified here.",
+      "releaseNotes": "Candidate 1.0.1 for Aroki 2.0.3+ testing. Extracts mp4 streams from Blogger / GoogleVideo sources via scriptAssignment on fileUrl. Note: Titles using encrypted MegaPlay (source=hianime) or MegaVid (source=embed) fail resolution natively. On physical iOS devices, GoogleVideo streams may encounter 403 Forbidden due to mediaserverd User-Agent stripping of eaua tokens or IP locking.",
       "manifest": {
         "path": "connectors/hianime/connector.json",
-        "sha256": "8cd2b91e19e3a8b9fc4cb6132ff424ad5450e1912fde496d23162828b43033b7"
+        "sha256": "d1341b9800c5c3fbec366a19f504d1c2c0138aeee37502446e1e6480ea67eb9c"
       }
     }
   ]
