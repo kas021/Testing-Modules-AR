@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "repositoryID": "aroki-testing-modules",
+  "name": "Testing Modules AR",
+  "enabled": true,
+  "generatedAt": 1788796275,
+  "connectors": [
+    {
+      "id": "hianime",
+      "familyID": "hianime",
+      "name": "HiAnimeTV (BETA - Testing only)",
+      "version": "1.0.0",
+      "minimumAppVersion": "2.0.3",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Experimental candidate. Requires scriptAssignment support, not present in Aroki 2.0.2. Version 2.0.3 is a reserved minimum, not a claim of a released compatible build. Playback unverified here.",
+      "manifest": {
+        "path": "connectors/hianime/connector.json",
+        "sha256": "8cd2b91e19e3a8b9fc4cb6132ff424ad5450e1912fde496d23162828b43033b7"
+      }
+    }
+  ]
+}

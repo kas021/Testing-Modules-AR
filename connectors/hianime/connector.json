@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "id": "hianime",
+  "familyID": "hianime",
+  "name": "HiAnimeTV (BETA - Testing only)",
+  "version": "1.0.0",
+  "minimumAppVersion": "2.0.3",
+  "contentType": "video",
+  "language": "en",
+  "contentRating": "unknown",
+  "releaseTrack": "beta",
+  "status": "active",
+  "attribution": {
+    "author": "Vireo community",
+    "website": "https://hianimetv.su/"
+  },
+  "authorization": {
+    "basis": "documented-public-api",
+    "note": "EXPERIMENT ONLY. Public endpoints on hianimetv.su; this is not a rights determination and must not ship without documented authorization from the source operator.",
+    "evidenceURL": "https://hianimetv.su/"
+  },
+  "allowedHosts": [
+    "hianimetv.su",
+    "*.googlevideo.com",
+    "*.wp.com",
+    "i0.wp.com",
+    "i1.wp.com",
+    "i2.wp.com",
+    "i3.wp.com"
+  ],
+  "capabilities": [
+    "discovery",
+    "search",
+    "details",
+    "episodes",
+    "streams"
+  ],
+  "limits": {
+    "timeoutMilliseconds": 20000,
+    "maxConcurrentRequests": 2,
+    "maxResponseBytes": 8388608
+  },
+  "operations": {
+    "discovery": {
+      "sections": [
+        {
+          "id": "latest-anime",
+          "title": "Latest Anime",
+          "semantic": "recent",
+          "request": {
+            "method": "GET",
+            "urlTemplate": "https://hianimetv.su/anime/?page={page}",
+            "headers": {
+              "Accept": "text/html",
+              "Referer": "https://hianimetv.su/",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            }
+          },
+          "response": {
+            "format": "html"
+          },
+          "pagination": {
+            "type": "pageParam",
+            "start": 1,
+            "maxPages": 25
+          },
+          "items": {
+            "collection": "div.listupd article.bs div.bsx",
+            "fields": {
+              "sourceID": {
+                "selector": "a.tip",
+                "part": "attr",
+                "attr": "href",
+                "transforms": [
+                  {
+                    "op": "removePrefix",
+                    "value": "https://hianimetv.su/anime/"
+                  },
+                  {
+                    "op": "removeSuffix",
+                    "value": "/"
+                  }
+                ]
+              },
+              "title": {
+                "selector": "a.tip",
+                "part": "attr",
+                "attr": "title",
+                "transforms": [
+                  {
+                    "op": "trim"
+                  }
+                ]
+              },
+              "posterURL": {
+                "selector": "img.ts-post-image",
+                "part": "attr",
+                "attr": "src"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "search": {
+      "request": {
+        "method": "GET",
+        "urlTemplate": "https://hianimetv.su/?s={query}&page={page}",
+        "headers": {
+          "Accept": "text/html",
+          "Referer": "https://hianimetv.su/",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+        }
+      },
+      "response": {
+        "format": "html"
+      },
+      "pagination": {
+        "type": "pageParam",
+        "start": 1,
+        "maxPages": 25
+      },
+      "items": {
+        "collection": "div.listupd article.bs div.bsx",
+        "fields": {
+          "sourceID": {
+            "selector": "a.tip",
+            "part": "attr",
+            "attr": "href",
+            "transforms": [
+              {
+                "op": "removePrefix",
+                "value": "https://hianimetv.su/anime/"
+              },
+              {
+                "op": "removeSuffix",
+                "value": "/"
+              }
+            ]
+          },
+          "title": {
+            "selector": "a.tip",
+            "part": "attr",
+            "attr": "title",
+            "transforms": [
+              {
+                "op": "trim"
+              }
+            ]
+          },
+          "posterURL": {
+            "selector": "img.ts-post-image",
+            "part": "attr",
+            "attr": "src"
+          }
+        }
+      }
+    },
+    "details": {
+      "request": {
+        "method": "GET",
+        "urlTemplate": "https://hianimetv.su/anime/{titleID}/",
+        "headers": {
+          "Accept": "text/html",
+          "Referer": "https://hianimetv.su/",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+        }
+      },
+      "response": {
+        "format": "html"
+      },
+      "extract": {
+        "title": {
+          "selector": "h1.entry-title",
+          "part": "text",
+          "transforms": [
+            {
+              "op": "trim"
+            }
+          ]
+        },
+        "synopsis": {
+          "selector": "div.entry-content p",
+          "part": "text",
+          "transforms": [
+            {
+              "op": "trim"
+            }
+          ]
+        },
+        "posterURL": {
+          "selector": "div.thumb img",
+          "part": "attr",
+          "attr": "src"
+        }
+      }
+    },
+    "episodes": {
+      "request": {
+        "method": "GET",
+        "urlTemplate": "https://hianimetv.su/anime/{titleID}/",
+        "headers": {
+          "Accept": "text/html",
+          "Referer": "https://hianimetv.su/",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+        }
+      },
+      "response": {
+        "format": "html"
+      },
+      "extract": {
+        "collection": "div.eplister ul li",
+        "fields": {
+          "episodeID": {
+            "selector": "a",
+            "part": "attr",
+            "attr": "href",
+            "transforms": [
+              {
+                "op": "removePrefix",
+                "value": "https://hianimetv.su/"
+              },
+              {
+                "op": "removeSuffix",
+                "value": "/"
+              }
+            ]
+          },
+          "episodeNumber": {
+            "selector": "div.epl-num",
+            "part": "text",
+            "transforms": [
+              {
+                "op": "firstInteger"
+              }
+            ]
+          },
+          "title": {
+            "selector": "div.epl-num",
+            "part": "text",
+            "transforms": [
+              {
+                "op": "template",
+                "value": "Episode {value}"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "streams": {
+      "variants": [
+        "sub"
+      ],
+      "playbackHeaders": {
+        "Referer": "https://hianimetv.su/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      },
+      "steps": [
+        {
+          "request": {
+            "method": "GET",
+            "urlTemplate": "https://hianimetv.su/{episodeID}/",
+            "headers": {
+              "Accept": "text/html",
+              "Referer": "https://hianimetv.su/",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            }
+          },
+          "response": {
+            "format": "html"
+          },
+          "extract": {
+            "context": {
+              "embedURL": {
+                "selector": "div#pembed iframe",
+                "part": "attr",
+                "attr": "src",
+                "kind": "url"
+              }
+            }
+          }
+        },
+        {
+          "request": {
+            "method": "GET",
+            "follow": "embedURL",
+            "headers": {
+              "Accept": "text/html",
+              "Referer": "https://hianimetv.su/",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            }
+          },
+          "response": {
+            "format": "html"
+          },
+          "extract": {
+            "collection": "html",
+            "fields": {
+              "url": {
+                "selector": "script",
+                "part": "scriptAssignment",
+                "var": "fileUrl"
+              },
+              "mediaTypeHint": {
+                "literal": "mp4"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "releaseNotes": "Experimental candidate. Requires scriptAssignment support, not present in Aroki 2.0.2. Version 2.0.3 is a reserved minimum, not a claim of a released compatible build. Playback unverified here."
+}
