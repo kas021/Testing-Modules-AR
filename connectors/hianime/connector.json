@@ -3,8 +3,8 @@
   "id": "hianime",
   "familyID": "hianime",
   "name": "HiAnimeTV (BETA - Testing only)",
-  "version": "1.0.1",
-  "minimumAppVersion": "2.0.3",
+  "version": "1.0.2",
+  "minimumAppVersion": "2.0.4",
   "contentType": "video",
   "language": "en",
   "contentRating": "unknown",
@@ -311,5 +311,5 @@
       ]
     }
   },
-  "releaseNotes": "Candidate 1.0.1 for Aroki 2.0.3+ testing. Extracts mp4 streams from Blogger / GoogleVideo sources via scriptAssignment on fileUrl. Note: Titles using encrypted MegaPlay (source=hianime) or MegaVid (source=embed) fail resolution natively. On physical iOS devices, GoogleVideo streams may encounter 403 Forbidden due to mediaserverd User-Agent stripping of eaua tokens or IP locking."
+  "releaseNotes": "Candidate 1.0.2 requires Aroki 2.0.4+ to leverage Apple's dedicated AVURLAssetHTTPUserAgentKey for GoogleVideo (Blogger) playback. GoogleVideo signs User-Agent in eaua tokens; version 2.0.4 preserves this header natively on iOS. Note: titles defaulting to encrypted MegaPlay (e.g. My Melody) or dead MegaVid embeds (e.g. 100 Meters) do not provide direct mp4 links and fail stream resolution natively. Live playback on physical iOS devices remains unverified until tested with Aroki build 17+."
 }
