@@ -3,8 +3,25 @@
   "repositoryID": "aroki-testing-modules",
   "name": "Testing Modules AR",
   "enabled": true,
-  "generatedAt": 1788800103,
+  "generatedAt": 1788899920,
   "connectors": [
+    {
+      "id": "anikoto-testing",
+      "familyID": "anikoto-testing",
+      "name": "AniKoto (BETA - Testing only)",
+      "version": "0.3.8",
+      "minimumAppVersion": "0.1.0",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Testing collection only: use the current MegaPlay source endpoint. Separate identity preserves normal AniKoto. 45/50 HTTP media checks passed; 5 title matches unverified. Fragrant Flower episode 1 SUB and DUB passed macOS AVPlayer startup, middle seek and caption parsing. iPhone playback, caption rendering, spoken language and offline downloads remain unverified.",
+      "manifest": {
+        "path": "connectors/anikoto-testing/connector.json",
+        "sha256": "b8de4757a4ce7c3b2e1b0af3fd01d37f03838a33489545f68083811e91abe7eb"
+      }
+    },
     {
       "id": "hianime",
       "familyID": "hianime",
