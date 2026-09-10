@@ -3,7 +3,7 @@
   "repositoryID": "aroki-testing-modules",
   "name": "Testing Modules AR",
   "enabled": true,
-  "generatedAt": 1788899920,
+  "generatedAt": 1789029839,
   "connectors": [
     {
       "id": "anikoto-testing",
@@ -37,6 +37,91 @@
       "manifest": {
         "path": "connectors/hianime/connector.json",
         "sha256": "cbefe0b434466e6db090a4d53dd06e0f62c4a76efc76078895d300396cb742de"
+      }
+    },
+    {
+      "id": "anime-sama-expansion",
+      "familyID": "anime-sama-expansion",
+      "name": "Anime-Sama (BETA - Testing only)",
+      "version": "0.3.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "fr",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "23/24 confirmed-present titles resolved in strict frozen50; 26 unconfirmed. Mac advancement/seek demonstrated. iPhone, captions/audio, offline, PiP, AirPlay unverified.",
+      "manifest": {
+        "path": "connectors/anime-sama-expansion/connector.json",
+        "sha256": "995842eca4677a6fc33fdc52c9ed8ebc9c85bb43102a8f59a5e0e85e4001f544"
+      }
+    },
+    {
+      "id": "aniworld-expansion",
+      "familyID": "aniworld-expansion",
+      "name": "Aniworld (BETA - SUB testing)",
+      "version": "0.3.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "mul",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "30/32 confirmed-present titles resolved in strict frozen50; 18 unconfirmed. Mac advancement/seek demonstrated. SUB only: source-labelled German then English captions; language and device checks unverified.",
+      "manifest": {
+        "path": "connectors/aniworld-expansion/connector.json",
+        "sha256": "44abe35b426b513c6a21c1c696374115875625a3a196e4e9fa7de044bf44da72"
+      }
+    },
+    {
+      "id": "animekai-expansion",
+      "familyID": "animekai-expansion",
+      "name": "AnimeKai (BETA - Testing only)",
+      "version": "0.2.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Experimental: historical 29/35 confirmed-present resolution; 15 unconfirmed. Below 90 percent threshold. Failures remain. Not iPhone-certified.",
+      "manifest": {
+        "path": "connectors/animekai-expansion/connector.json",
+        "sha256": "34a27a1ed372879aea668cfabe7db58d477ac9e50d806e3a411874fa892bb2b3"
+      }
+    },
+    {
+      "id": "mugiwara-expansion",
+      "familyID": "mugiwara-expansion",
+      "name": "Mugiwara (BETA - SUB TV testing)",
+      "version": "0.1.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "fr",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "SUB TV pilot only. Naruto and Black Clover advance/seek on Mac. Historical 15/20 confirmed-present resolution; 30 unconfirmed. Catalogue/episode failures remain. Not iPhone-certified.",
+      "manifest": {
+        "path": "connectors/mugiwara-expansion/connector.json",
+        "sha256": "9a48bcdc57caca86e767ae0ce71d2a0c1ecddcc87cb37edbd0a93a81a50e0fe3"
+      }
+    },
+    {
+      "id": "animeunity-expansion",
+      "familyID": "animeunity-expansion",
+      "name": "AnimeUnity (BETA - Playback blocked)",
+      "version": "0.1.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "it",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "PLAYBACK BLOCKED: catalogue and episode listing work; advertised video playlists return HTTP 403. Published for diagnostic testing, not working playback. No bypass or decryption.",
+      "manifest": {
+        "path": "connectors/animeunity-expansion/connector.json",
+        "sha256": "82e82bc0bb3cfeb54ddf52b4f63f7a219a533716eeffffb45ffe0ca01d70b025"
       }
     }
   ]

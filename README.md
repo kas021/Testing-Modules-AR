@@ -6,6 +6,14 @@ websites, media, artwork or their data. Use only content you are entitled to acc
 
 ## Import the testing collection
 
+### New native-expansion pilots — September 10, 2026
+
+**Requires Aroki 2.0.36+ with the new engine.** Anime-Sama, Aniworld,
+AnimeKai and Mugiwara are experimental playback candidates. AnimeUnity is
+included as **playback blocked**, for diagnosis only. None is iPhone-certified.
+Refresh this collection, add the desired BETA source, and select it. Existing
+installed sources are not replaced. [Results and testing instructions](docs/native-expansion-2026-09-10.md).
+
 In an Aroki build supporting unsigned collections, open Profile → Sources,
 enable **Allow unsigned collection**, enter `kas021/Testing-Modules-AR`,
 and explicitly approve the unsigned collection. This is separate from your
