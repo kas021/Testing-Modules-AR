@@ -3,7 +3,7 @@
   "repositoryID": "aroki-testing-modules",
   "name": "Testing Modules AR",
   "enabled": true,
-  "generatedAt": 1789029839,
+  "generatedAt": 1789157049,
   "connectors": [
     {
       "id": "anikoto-testing",
@@ -122,6 +122,23 @@
       "manifest": {
         "path": "connectors/animeunity-expansion/connector.json",
         "sha256": "82e82bc0bb3cfeb54ddf52b4f63f7a219a533716eeffffb45ffe0ca01d70b025"
+      }
+    },
+    {
+      "id": "synthetiq-anime-testing",
+      "familyID": "synthetiq-anime-testing",
+      "name": "Synthetiq Anime (BETA - Testing only)",
+      "version": "0.1.0",
+      "minimumAppVersion": "2.0.38",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Experimental native AniList/MAL catalogue and fresh Vidhawk Flow/Zuri tickets. Catalogue counts do not prove playback. Provider Dub labels and subtitle rendering need independent verification. Local testing only.",
+      "manifest": {
+        "path": "connectors/synthetiq-anime-testing/connector.json",
+        "sha256": "f83d4fb3a28b69f275e388b62c4816c74c93bfce5eee5ea2f3163b175b1a8fed"
       }
     }
   ]

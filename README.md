@@ -6,6 +6,15 @@ websites, media, artwork or their data. Use only content you are entitled to acc
 
 ## Import the testing collection
 
+### Synthetiq Anime — September 11, 2026
+
+**Requires Aroki 2.0.38 (51) or newer with the corresponding engine features.**
+Refresh this collection, add **Synthetiq Anime (BETA - Testing only)** version
+0.1.0, then select it. Its separate identity does not replace Synthetiq One.
+This is a testing release, not production certification. Short iPhone playback
+and seeking passed; spoken-language correctness, visible captions and offline
+playback still need checking. [Results and checklist](docs/synthetiq-anime-2026-09-11.md).
+
 ### New native-expansion pilots — September 10, 2026
 
 **Requires Aroki 2.0.36+ with the new engine.** Anime-Sama, Aniworld,
