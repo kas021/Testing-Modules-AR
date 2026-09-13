@@ -1,72 +1,69 @@
 # Testing Modules AR
 
-Public experimental Aroki connectors. Not the official stable collection.
-Source code is licensed under MIT; that licence does not cover third-party
-websites, media, artwork or their data. Use only content you are entitled to access.
+A small, curated collection for testing Aroki's newer iOS engine.
+This is separate from the main AROKI-Connectors repository.
 
-## Import the testing collection
+## Install on your iPhone
 
-### Synthetiq Anime — September 11, 2026
+Use Aroki **2.0.39 (52)** or newer for this testing round.
+The retained connector's actual minimum remains 2.0.36.
 
-**Requires Aroki 2.0.38 (51) or newer with the corresponding engine features.**
-Refresh this collection, add **Synthetiq Anime (BETA - Testing only)** version
-0.1.0, then select it. Its separate identity does not replace Synthetiq One.
-This is a testing release, not production certification. Short iPhone playback
-and seeking passed; spoken-language correctness, visible captions and offline
-playback still need checking. [Results and checklist](docs/synthetiq-anime-2026-09-11.md).
+1. Open **Profile → Sources**.
+2. Paste this collection address:
 
-### New native-expansion pilots — September 10, 2026
+   `https://raw.githubusercontent.com/kas021/Testing-Modules-AR/main/index.json`
 
-**Requires Aroki 2.0.36+ with the new engine.** Anime-Sama, Aniworld,
-AnimeKai and Mugiwara are experimental playback candidates. AnimeUnity is
-included as **playback blocked**, for diagnosis only. None is iPhone-certified.
-Refresh this collection, add the desired BETA source, and select it. Existing
-installed sources are not replaced. [Results and testing instructions](docs/native-expansion-2026-09-10.md).
+3. Import/refresh the collection, add **Aniworld (BETA - SUB testing)** and select it.
+4. Search for Naruto or One Piece after selecting the source. Existing saved
+   titles retain their original source, so opening one is not a source-switch test.
 
-In an Aroki build supporting unsigned collections, open Profile → Sources,
-enable **Allow unsigned collection**, enter `kas021/Testing-Modules-AR`,
-and explicitly approve the unsigned collection. This is separate from your
-existing official repository and does not change its modules.
+The collection remains unsigned, with its existing identity and trust policy.
+No app update, signing key or replacement repository is introduced here.
 
-## AniKoto (BETA - Testing only) — 0.3.8
+## Currently offered
 
-Use **Check for Updates** on this collection, add the newly offered source,
-and select **AniKoto (BETA - Testing only)**. Its separate `anikoto-testing`
-identity leaves the normal AniKoto source and saved progress untouched. Saved
-items from normal AniKoto still belong to that source: search for your test title
-after selecting the testing source rather than opening an existing saved item.
+| Source | Version | Evidence |
+| --- | --- | --- |
+| Aniworld (BETA - SUB testing) | 0.3.0 | Fresh exact-title middle-episode HLS segment checks passed for Naruto and One Piece. Earlier macOS AVPlayer advancement and seeking passed. |
 
-This candidate updates the source endpoint without adding JavaScript or app code.
-It has 45 HTTP media passes from the frozen 50-title corpus; 5 title matches were
-unverified. Fragrant Flower episode 1 SUB and DUB passed short macOS AVPlayer
-playback and middle seeking, with native English caption parsing. This is not
-physical iPhone, subtitle rendering, spoken-language or offline certification.
+**This is a working test candidate, not a promise that every episode works.**
+The earlier strict 50-title run had 30 passes, 2 failures and 18 unconfirmed
+titles (not 50 successes). Source-labelled German-captioned SUB is tried before
+English-captioned SUB; actual dialogue/caption language remains to be checked.
+No full iPhone, offline, PiP or AirPlay certification is claimed.
 
-Test Fragrant Flower episode 1 in SUB and DUB, visible English subtitles, middle
-seeking, 5–10 minutes of playback, then downloading and airplane-mode playback.
-If anything fails, switch back to normal AniKoto. No stable collection is changed.
+## What to test
 
-This testing repository remains unsigned and needs a build that supports unsigned
-collections. The manifest itself uses the existing connector schema; the testing
-collection is not a delivery route for old signed-only app builds.
+- Search, details, season selection and episode numbering.
+- Playback starts, advances, seeks and runs for at least ten minutes.
+- Actual spoken audio and visible subtitle language/content.
+- Quality changes where supplied, and position/audio retention.
+- Download completion, airplane-mode playback and reopening after relaunch.
+- PiP and AirPlay separately, with a real receiver for AirPlay.
 
-## HiAnimeTV historical notes
+## Removed candidates
 
-- Candidate version: 1.0.0. Not certified or production-ready.
-- Needs the experimental native `scriptAssignment` extractor.
-- **Aroki 2.0.2 cannot install/use this connector.**
-- Minimum 2.0.3 is reserved to keep unsupported current builds from offering
-  installation. It does not mean a compatible 2.0.3 app exists or has shipped.
-- An app with both that version and the implemented extractor is still needed.
-- This publication did not run live playback, subtitle, download or device tests.
-- No JavaScript runtime is included. The extractor implementation is app code,
-  not something importing this repository installs.
+On 13 September 2026 the active index and connector folders were reduced from
+eight candidates to one. AniKoto testing, HiAnimeTV, Anime-Sama, AnimeKai,
+Mugiwara, AnimeUnity and Synthetiq Anime testing are held back because of
+failed checks, unresolved language/caption issues or insufficient reliability.
+
+See [the curation record](docs/curation-2026-09-13.md).
+Their source files remain recoverable in Git history. Old documents under
+`docs/` are historical evidence, not a list of currently installable sources.
+
+Already installed sources are not remotely erased. After refreshing, an old
+source may show **No longer listed**. Long-press it and choose **Remove source**
+if you want to remove the installed copy. No library or downloads are deleted
+by this repository change.
 
 ## Development
 
-Keep candidates isolated from the official repository. For every manifest edit,
-update the version, its SHA-256 in index.json and the index generatedAt timestamp.
-Index identity/version fields must match the manifest. Never add secrets, signed
-media URLs, downloaded media, private app code or production credentials.
-Do not claim a minimum app version supports an operation without testing it.
-Public access to a source is not evidence of permission to redistribute its content.
+Keep failed/diagnostic candidates off this active feed until their problems
+are resolved and fresh evidence is recorded. Preserve the repository ID, trust
+mode and retained manifest hashes; advance the index timestamp for index edits.
+Manifest changes require their own version bump and matching index SHA-256.
+Do not publish secrets, temporary stream routes or private app code.
+
+Source code is MIT licensed; that licence does not cover third-party websites,
+media, artwork or data. Use only content you are entitled to access.
