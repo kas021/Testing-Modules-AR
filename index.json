@@ -3,23 +3,74 @@
   "repositoryID": "aroki-testing-modules",
   "name": "Testing Modules AR",
   "enabled": true,
-  "generatedAt": 1789300556,
+  "generatedAt": 1789301561,
   "connectors": [
+    {
+      "id": "synthetiq-anime-direct",
+      "familyID": "synthetiq-anime-direct",
+      "name": "Synthetiq Flux (BETA - Testing only)",
+      "version": "0.1.0",
+      "minimumAppVersion": "2.0.38",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Testing port of Player Flux 1.0.0 for Aroki 2.0.38+. Catalogue-derived episodes are not provider-verified. Earlier macOS playback/seek passed; provider Dub labels, visible captions and iPhone playback need testing. Downloads disabled pending certification. Not compatible with Aroki 1.2.",
+      "manifest": {
+        "path": "connectors/synthetiq-anime-direct/connector.json",
+        "sha256": "37cdf859a5683844f686b8773083cd036124807a93fc8c956e5f955f54ee9664"
+      }
+    },
+    {
+      "id": "synthetiq-anime-testing",
+      "familyID": "synthetiq-anime-testing",
+      "name": "Synthetiq Anime (BETA - Testing only)",
+      "version": "0.1.0",
+      "minimumAppVersion": "2.0.38",
+      "contentType": "video",
+      "language": "en",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Restored for owner testing: short iPhone playback/seek passed. Known provider Dub/audio mismatch and missing captions on some titles remain; not full language/offline certification.",
+      "manifest": {
+        "path": "connectors/synthetiq-anime-testing/connector.json",
+        "sha256": "f83d4fb3a28b69f275e388b62c4816c74c93bfce5eee5ea2f3163b175b1a8fed"
+      }
+    },
     {
       "id": "aniworld-expansion",
       "familyID": "aniworld-expansion",
       "name": "Aniworld (BETA - SUB testing)",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "minimumAppVersion": "2.0.36",
       "contentType": "video",
       "language": "mul",
       "contentRating": "unknown",
       "releaseTrack": "beta",
       "status": "active",
-      "releaseNotes": "Curated iPhone-test candidate: Naruto and One Piece passed fresh exact-title middle-episode HLS segment checks on 2026-09-13. Earlier macOS playback/seek passed. Historical strict corpus: 30 passed, 2 failed, 18 unconfirmed. SUB only; visible captions, spoken language, iPhone and offline checks remain unverified. Not a guarantee of every title.",
+      "releaseNotes": "0.3.1 adds the missing Home/Browse discovery feed using existing native HTML mappings, with lazy-loaded posters and series-only identities. Playback resolver unchanged. SUB testing; visible captions, spoken language and offline remain unverified.",
       "manifest": {
         "path": "connectors/aniworld-expansion/connector.json",
-        "sha256": "44abe35b426b513c6a21c1c696374115875625a3a196e4e9fa7de044bf44da72"
+        "sha256": "e3d3297bc5a40a80b0e32ba4e4edb02b6326e239bdc9c02917241f541055acd9"
+      }
+    },
+    {
+      "id": "anime-sama-expansion",
+      "familyID": "anime-sama-expansion",
+      "name": "Anime-Sama (BETA - Testing only)",
+      "version": "0.3.0",
+      "minimumAppVersion": "2.0.36",
+      "contentType": "video",
+      "language": "fr",
+      "contentRating": "unknown",
+      "releaseTrack": "beta",
+      "status": "active",
+      "releaseNotes": "Restored for owner testing: native playback/seek previously demonstrated; Black Torch middle-episode timeout remains while Naruto works. Not fully certified.",
+      "manifest": {
+        "path": "connectors/anime-sama-expansion/connector.json",
+        "sha256": "995842eca4677a6fc33fdc52c9ed8ebc9c85bb43102a8f59a5e0e85e4001f544"
       }
     }
   ]

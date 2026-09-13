@@ -3,7 +3,7 @@
   "id": "aniworld-expansion",
   "familyID": "aniworld-expansion",
   "name": "Aniworld (BETA - SUB testing)",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "minimumAppVersion": "2.0.36",
   "requiredEngineFeatures": [
     "form-post-v1",
@@ -28,6 +28,7 @@
     "vidmoly.biz"
   ],
   "capabilities": [
+    "discovery",
     "search",
     "details",
     "episodes",
@@ -339,7 +340,55 @@
           ]
         }
       ]
+    },
+    "discovery": {
+      "sections": [
+        {
+          "id": "home",
+          "title": "From AniWorld",
+          "semantic": "all",
+          "request": {
+            "method": "GET",
+            "urlTemplate": "https://aniworld.to/"
+          },
+          "response": {
+            "format": "html"
+          },
+          "pagination": {
+            "type": "none"
+          },
+          "items": {
+            "collection": "a[href^='/anime/stream/']:has(img[data-src]):has(h3):not([href*='/staffel-']):not([href*='/episode-'])",
+            "fields": {
+              "sourceID": {
+                "selector": "a",
+                "part": "attr",
+                "attr": "href",
+                "transforms": [
+                  {
+                    "op": "lastPathComponent"
+                  }
+                ]
+              },
+              "title": {
+                "selector": "h3",
+                "part": "text"
+              },
+              "posterURL": {
+                "selector": "img[data-src]",
+                "part": "attr",
+                "attr": "data-src",
+                "transforms": [
+                  {
+                    "op": "absolutize"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
     }
   },
-  "releaseNotes": "Local research: German-caption SUB route first, English-caption SUB route second; neither falls back to dubbed audio. Caption/spoken-language verification and iPhone gates remain unverified. Do not publish."
+  "releaseNotes": "0.3.1 adds the missing Home/Browse discovery feed using existing native HTML mappings, with lazy-loaded posters and series-only identities. Playback resolver unchanged. SUB testing; visible captions, spoken language and offline remain unverified."
 }

@@ -1,69 +1,74 @@
 # Testing Modules AR
 
-A small, curated collection for testing Aroki's newer iOS engine.
-This is separate from the main AROKI-Connectors repository.
+Four experimental Aroki sources for owner testing on the newer iOS engine.
+This is not the official stable collection and is not full playback certification.
 
-## Install on your iPhone
+## Add or refresh
 
-Use Aroki **2.0.39 (52)** or newer for this testing round.
-The retained connector's actual minimum remains 2.0.36.
+In **Profile → Sources**, paste:
 
-1. Open **Profile → Sources**.
-2. Paste this collection address:
+```text
+https://raw.githubusercontent.com/kas021/Testing-Modules-AR/main/index.json
+```
 
-   `https://raw.githubusercontent.com/kas021/Testing-Modules-AR/main/index.json`
+Use **Check for Updates**, apply the AniWorld **0.3.1** update, and add the other
+offered sources. Select the source you want to test. Your installed Aroki
+**2.0.39 (52)** supports these manifests; no app reinstall is needed.
 
-3. Import/refresh the collection, add **Aniworld (BETA - SUB testing)** and select it.
-4. Search for Naruto or One Piece after selecting the source. Existing saved
-   titles retain their original source, so opening one is not a source-switch test.
+If AniWorld still shows 0.3.0, its module update has not applied yet. That old
+module had no homepage operation. Select the updated source again after updating.
 
-The collection remains unsigned, with its existing identity and trust policy.
-No app update, signing key or replacement repository is introduced here.
+## Sources in this collection
 
-## Currently offered
-
-| Source | Version | Evidence |
+| Source | Version | Current evidence and limits |
 | --- | --- | --- |
-| Aniworld (BETA - SUB testing) | 0.3.0 | Fresh exact-title middle-episode HLS segment checks passed for Naruto and One Piece. Earlier macOS AVPlayer advancement and seeking passed. |
+| **Synthetiq Flux (BETA - Testing only)** | 0.1.0 | Newly indexed native port for 2.0.38+. Fresh Home: 39 titles/posters. Dr. Stone episode 1 SUB played and resumed after middle seek on macOS. Dub labels can be wrong; visible captions/iPhone/offline remain unverified. Downloads deliberately disabled. |
+| **Synthetiq Anime (BETA - Testing only)** | 0.1.0 | Restored unchanged. Fresh Home: 39 titles/posters. Earlier short iPhone playback/seek tests passed. Known missing captions on some titles and a provider Dub/audio mismatch remain. |
+| **Aniworld (BETA - SUB testing)** | 0.3.1 | Adds the missing Home/Browse feed. Fresh Home: 30 series/posters; search/episode/stream operations unchanged. Source-labelled DE/EN SUB choices need actual language checks. |
+| **Anime-Sama (BETA - Testing only)** | 0.3.0 | Restored unchanged. Fresh Home: 30 titles/posters. Naruto works; Black Torch middle-episode timeout remains. Not fully certified. |
 
-**This is a working test candidate, not a promise that every episode works.**
-The earlier strict 50-title run had 30 passes, 2 failures and 18 unconfirmed
-titles (not 50 successes). Source-labelled German-captioned SUB is tried before
-English-captioned SUB; actual dialogue/caption language remains to be checked.
-No full iPhone, offline, PiP or AirPlay certification is claimed.
+Numbers are snapshots from 13 September 2026, not catalogue size guarantees.
+Catalogue rows do not prove that a playable provider copy exists.
 
-## What to test
+Flux and Synthetiq Anime are **different connector identities**. Flux is a port
+of the released Player Flux module, not a renamed Synthetiq Anime package.
+Neither is a module-only solution for Aroki 1.2; minimum versions are retained.
 
-- Search, details, season selection and episode numbering.
-- Playback starts, advances, seeks and runs for at least ten minutes.
-- Actual spoken audio and visible subtitle language/content.
-- Quality changes where supplied, and position/audio retention.
-- Download completion, airplane-mode playback and reopening after relaunch.
-- PiP and AirPlay separately, with a real receiver for AirPlay.
+## Testing steps
 
-## Removed candidates
+1. Confirm the selected source has a populated Home and usable posters.
+2. Search for a known title; verify the title, season and episode.
+3. Play, seek, and watch for ten minutes; verify real dialogue and captions.
+4. Check quality/language choices only where actually supplied.
+5. Test downloads/offline, PiP and AirPlay separately where supported.
 
-On 13 September 2026 the active index and connector folders were reduced from
-eight candidates to one. AniKoto testing, HiAnimeTV, Anime-Sama, AnimeKai,
-Mugiwara, AnimeUnity and Synthetiq Anime testing are held back because of
-failed checks, unresolved language/caption issues or insufficient reliability.
+Saved titles retain their original source. Search after switching sources rather
+than using a saved entry from a different source.
 
-See [the curation record](docs/curation-2026-09-13.md).
-Their source files remain recoverable in Git history. Old documents under
-`docs/` are historical evidence, not a list of currently installable sources.
+## What changed
 
-Already installed sources are not remotely erased. After refreshing, an old
-source may show **No longer listed**. Long-press it and choose **Remove source**
-if you want to remove the installed copy. No library or downloads are deleted
-by this repository change.
+The earlier one-source cleanup was too aggressive for the requested exploratory
+testing. It removed usable partial candidates and did not test AniWorld's Home.
+This update corrects that: it restores the two tested candidates, adds the Flux
+native beta, and repairs AniWorld discovery without editing app code.
+
+[Repair and evidence record](docs/discovery-and-restoration-2026-09-13.md).
+Earlier documents are historical, not current install lists.
+
+Known non-working candidates (HiAnimeTV, AnimeUnity and the failing AniKoto
+testing endpoint) are not reintroduced. AnimeKai/Mugiwara remain held for further
+work. No claim is made that every source previously explored is working.
+
+The collection ID and unsigned trust mode are unchanged. The stable
+AROKI-Connectors repository is untouched. Removed installed sources are not
+remotely erased; use their Remove source menu if desired.
 
 ## Development
 
-Keep failed/diagnostic candidates off this active feed until their problems
-are resolved and fresh evidence is recorded. Preserve the repository ID, trust
-mode and retained manifest hashes; advance the index timestamp for index edits.
-Manifest changes require their own version bump and matching index SHA-256.
-Do not publish secrets, temporary stream routes or private app code.
+Run `node --test tests/collection.test.cjs` for exact-artifact checks.
+Native validation and tests are described in the evidence record. Changes to
+manifests require version/hash updates; index edits require a newer timestamp.
+Keep secrets, transient media URLs and private app code out of this repository.
 
 Source code is MIT licensed; that licence does not cover third-party websites,
 media, artwork or data. Use only content you are entitled to access.
