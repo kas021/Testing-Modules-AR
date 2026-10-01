@@ -3,8 +3,8 @@
   "id": "anime-sama-expansion-logo-test",
   "familyID": "anime-sama-expansion-logo-test",
   "name": "Anime-Sama (Logo Test)",
-  "version": "0.3.1",
-  "minimumAppVersion": "2.0.36",
+  "version": "0.3.2",
+  "minimumAppVersion": "2.1.8",
   "requiredEngineFeatures": [
     "literal-selection-v1",
     "literal-declarations-v1",
@@ -16,7 +16,8 @@
     "named-episode-groups-v1",
     "literal-object-projection-v1",
     "bounded-mirrors-v1",
-    "literal-tab-strings-v1"
+    "literal-tab-strings-v1",
+    "featured-artwork-v1"
   ],
   "contentType": "video",
   "language": "fr",
@@ -155,6 +156,11 @@
         },
         "posterURL": {
           "selector": "#imgOeuvre",
+          "part": "attr",
+          "attr": "src"
+        },
+        "featuredPosterURL": {
+          "selector": "#coverOeuvre",
           "part": "attr",
           "attr": "src"
         }

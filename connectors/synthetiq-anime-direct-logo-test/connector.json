@@ -3,8 +3,8 @@
   "id": "synthetiq-anime-direct-logo-test",
   "familyID": "synthetiq-anime-direct-logo-test",
   "name": "Synthetiq Flux (Logo Test)",
-  "version": "0.1.2",
-  "minimumAppVersion": "2.0.38",
+  "version": "0.1.3",
+  "minimumAppVersion": "2.1.8",
   "contentType": "video",
   "language": "en",
   "contentRating": "unknown",
@@ -42,7 +42,8 @@
     "contextual-hls-v1",
     "numbered-catalogue-v1",
     "catalogue-fallback-v1",
-    "graph-post-v1"
+    "graph-post-v1",
+    "featured-artwork-v1"
   ],
   "downloadSupport": "none",
   "limits": {
@@ -180,7 +181,7 @@
         "headers": {
           "Accept": "application/json"
         },
-        "body": "{\"query\":\"query{Media(idMal:{titleID},type:ANIME){id idMal title{english romaji} description(asHtml:false) coverImage{ large } seasonYear episodes status nextAiringEpisode{ episode }}}\"}"
+        "body": "{\"query\":\"query{Media(idMal:{titleID},type:ANIME){id idMal title{english romaji} description(asHtml:false) coverImage{ large extraLarge } seasonYear episodes status nextAiringEpisode{ episode }}}\"}"
       },
       "response": {
         "format": "json"
@@ -205,6 +206,9 @@
         },
         "year": {
           "path": "data.Media.seasonYear"
+        },
+        "featuredPosterURL": {
+          "path": "data.Media.coverImage.extraLarge"
         }
       }
     },

@@ -3,8 +3,8 @@
   "id": "anikoto-logo-test",
   "familyID": "anikoto-logo-test",
   "name": "AniKoto (Logo Test)",
-  "version": "0.3.10",
-  "minimumAppVersion": "0.1.0",
+  "version": "0.3.11",
+  "minimumAppVersion": "2.1.8",
   "contentType": "video",
   "language": "en",
   "contentRating": "unknown",
@@ -25,7 +25,9 @@
     "cdn.anipixcdn.co",
     "anikage.cc",
     "og.bakayaro.live",
-    "*.bakayaro.live"
+    "*.bakayaro.live",
+    "image.tmdb.org",
+    "s4.anilist.co"
   ],
   "capabilities": [
     "discovery",
@@ -579,6 +581,27 @@
         },
         "genres": {
           "collection": "div.bmeta div.meta a[href*=\"/genre/\"]"
+        },
+        "featuredPosterURL": {
+          "selector": "#player",
+          "part": "attr",
+          "attr": "style",
+          "transforms": [
+            {
+              "op": "trim"
+            },
+            {
+              "op": "removePrefix",
+              "value": "background-image: url('"
+            },
+            {
+              "op": "removeSuffix",
+              "value": "');"
+            },
+            {
+              "op": "trim"
+            }
+          ]
         }
       }
     },
@@ -846,5 +869,8 @@
       ]
     }
   },
-  "releaseNotes": "Restored in 0.3.10: AniKoto's own provider feed is now resolved through AniKage's public koto route (the direct MegaPlay responses became encrypted). Each title is matched by AniKoto's exact title, format, premiere season and year, and fails closed with no playable stream when that match is unavailable. Sub and Dub with all published caption languages."
+  "releaseNotes": "Restored in 0.3.10: AniKoto's own provider feed is now resolved through AniKage's public koto route (the direct MegaPlay responses became encrypted). Each title is matched by AniKoto's exact title, format, premiere season and year, and fails closed with no playable stream when that match is unavailable. Sub and Dub with all published caption languages.",
+  "requiredEngineFeatures": [
+    "featured-artwork-v1"
+  ]
 }

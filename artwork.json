@@ -3,7 +3,7 @@
   "repositoryID": "aroki-artwork-tests",
   "name": "Aroki Logo Tests",
   "enabled": true,
-  "generatedAt": 1790876049,
+  "generatedAt": 1790886726,
   "connectors": [
     {
       "contentRating": "unknown",
@@ -13,14 +13,14 @@
       "language": "en",
       "manifest": {
         "path": "connectors/synthetiq-anime-direct-logo-test/connector.json",
-        "sha256": "10b33fbc260bf5aa8236f978a5006bedf235afc3d30d3f10861ca4a72a66fd37"
+        "sha256": "80acac5f6dce676d83dffc3da8b43e86f4786200d9d74fd970015fb004962060"
       },
-      "minimumAppVersion": "2.0.38",
+      "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "icon": {
         "path": "logos/synthetiq-anime-direct-logo-test.png",
         "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
@@ -118,14 +118,14 @@
       "language": "en",
       "manifest": {
         "path": "connectors/synthetiq-anime-testing-logo-test/connector.json",
-        "sha256": "9e3e41da5b7624a928a71f83c34c74b6c691127a2af90a98cfa1bf90fed23fdc"
+        "sha256": "d2372179272f21b232c37b3a8db799e92c258ea4a4bcad8404b2c6cc1093a855"
       },
-      "minimumAppVersion": "2.0.38",
+      "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Anime (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "icon": {
         "path": "logos/synthetiq-anime-testing-logo-test.png",
         "sha256": "686a15b677c80264f95a880b621c984dcc9d9a5af13f9c62e492ae9a75ae12f3"
@@ -160,14 +160,14 @@
       "language": "fr",
       "manifest": {
         "path": "connectors/anime-sama-expansion-logo-test/connector.json",
-        "sha256": "5cb002b48d3b3c2cfd82fa4dea58f8be489877b8a66c6a864c5b7c9ba4da89e2"
+        "sha256": "ad4f3c21364a82dc191fbde9effee59e2bce60887437b2a882f099e4500f779e"
       },
-      "minimumAppVersion": "2.0.36",
+      "minimumAppVersion": "2.1.8",
       "name": "Anime-Sama (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "icon": {
         "path": "logos/anime-sama-expansion-logo-test.png",
         "sha256": "53a513fc474d3d0fd1a140f57afc244ad2ade7f0050b8b6731eea5daf16f7509"
@@ -181,14 +181,14 @@
       "language": "en",
       "manifest": {
         "path": "connectors/synthetiq-flux-no-logo-test/connector.json",
-        "sha256": "066686c4cbff2c2eb60b9ad0e68e13261e87614cd2df04b6ff5c5bb67bdd6bd6"
+        "sha256": "859b7ececc880de1c153c68ba87fbb9819e450e802d49c7b21f33d1e2e072d1b"
       },
-      "minimumAppVersion": "2.0.38",
+      "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (No Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "contentRating": "unknown",
@@ -198,14 +198,14 @@
       "language": "en",
       "manifest": {
         "path": "connectors/synthetiq-flux-broken-logo-test/connector.json",
-        "sha256": "95c5f80a0c536076f2b4894db1735c9dff60f108ca28148d7d14e427c732c134"
+        "sha256": "586f8a0f3a14ee0fbcc62e905fc9f117809b003e03f8646b7a0247d6a7460fe4"
       },
-      "minimumAppVersion": "2.0.38",
+      "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (Broken Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "icon": {
         "path": "logos/synthetiq-flux-broken-logo-test.png",
         "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
@@ -219,14 +219,14 @@
       "language": "en",
       "manifest": {
         "path": "connectors/anikoto-logo-test/connector.json",
-        "sha256": "7b646a341a980ed3d9331d5f55c69bcb0c70c20a1294c929399b673039055280"
+        "sha256": "497d264050eba825db0a42469c068cb2fae0350af2ca4eb37951f22d225846dd"
       },
-      "minimumAppVersion": "0.1.0",
+      "minimumAppVersion": "2.1.8",
       "name": "AniKoto (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.10",
+      "version": "0.3.11",
       "icon": {
         "path": "logos/anikoto-logo-test.png",
         "sha256": "1cec66bfd0e8a2a3a113b8d875875675e26ad396f5f9286a154e88c1b8d323e1"
