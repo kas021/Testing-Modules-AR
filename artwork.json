@@ -20,7 +20,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.10"
+      "version": "0.3.10",
+      "icon": {
+        "path": "logos/anikoto-logo-test.png",
+        "sha256": "1cec66bfd0e8a2a3a113b8d875875675e26ad396f5f9286a154e88c1b8d323e1"
+      }
     },
     {
       "contentRating": "unknown",
@@ -37,7 +41,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.5"
+      "version": "0.3.5",
+      "icon": {
+        "path": "logos/anikage-logo-test.png",
+        "sha256": "15cfcdc849918c4396f12b82d560b298b38c8db6b00408a027e2f03fba28ed21"
+      }
     },
     {
       "contentRating": "unknown",
@@ -54,7 +62,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "1.1.1"
+      "version": "1.1.1",
+      "icon": {
+        "path": "logos/animegg-logo-test.png",
+        "sha256": "e6e5b6ed81c5e6415371a48207b42b926fe482355750ba7213dac182fc838a0a"
+      }
     },
     {
       "contentRating": "unknown",
@@ -71,7 +83,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "2.2.1"
+      "version": "2.2.1",
+      "icon": {
+        "path": "logos/onepace-logo-test.png",
+        "sha256": "edf7143b585900e268b9561df5855ef10d47f9d358908779a658603bbe3de06e"
+      }
     },
     {
       "contentRating": "unknown",
@@ -88,7 +104,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "1.2.11"
+      "version": "1.2.11",
+      "icon": {
+        "path": "logos/synthetiq-one-logo-test.png",
+        "sha256": "67f400cc8c8712e706c1235166ea1ccf52cd41ee3c43374d3fecd3442080e8bd"
+      }
     },
     {
       "contentRating": "unknown",
@@ -105,7 +125,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2"
+      "version": "0.1.2",
+      "icon": {
+        "path": "logos/synthetiq-anime-testing-logo-test.png",
+        "sha256": "686a15b677c80264f95a880b621c984dcc9d9a5af13f9c62e492ae9a75ae12f3"
+      }
     },
     {
       "contentRating": "unknown",
@@ -122,7 +146,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2"
+      "version": "0.1.2",
+      "icon": {
+        "path": "logos/synthetiq-anime-direct-logo-test.png",
+        "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
+      }
     },
     {
       "contentRating": "unknown",
@@ -139,7 +167,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.2"
+      "version": "0.3.2",
+      "icon": {
+        "path": "logos/aniworld-expansion-logo-test.png",
+        "sha256": "793924805c59634a49b2917940aab237343d1c90d5a9f4b0d5d9d1bc8d8f190e"
+      }
     },
     {
       "contentRating": "unknown",
@@ -156,7 +188,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.1"
+      "version": "0.3.1",
+      "icon": {
+        "path": "logos/anime-sama-expansion-logo-test.png",
+        "sha256": "53a513fc474d3d0fd1a140f57afc244ad2ade7f0050b8b6731eea5daf16f7509"
+      }
     },
     {
       "contentRating": "unknown",
@@ -173,7 +209,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.1"
+      "version": "0.1.1",
+      "icon": {
+        "path": "logos/anipm-logo-test.png",
+        "sha256": "f0398d476b2c8501275f8750e18068dd0a90aeb1840da8f79108065c70476dd6"
+      }
     },
     {
       "contentRating": "unknown",
@@ -207,7 +247,11 @@
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.1.2"
+      "version": "0.1.2",
+      "icon": {
+        "path": "logos/synthetiq-flux-broken-logo-test.png",
+        "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
+      }
     }
   ]
 }

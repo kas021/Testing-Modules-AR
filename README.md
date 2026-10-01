@@ -1,5 +1,17 @@
 # Testing Modules AR
 
+## Current branch: module-logos
+
+Twelve isolated artwork test modules for Aroki 2.1.6 (91).
+Import **https://raw.githubusercontent.com/kas021/Testing-Modules-AR/module-logos/index.json**.
+Ten have official-service logo assets; two exercise missing/broken-logo fallback.
+The root index remains icon-free. Images live in a separate optional catalogue.
+Production modules and this repository's main branch are unchanged.
+
+See [logo test instructions and evidence](docs/LOGO_TESTS.md).
+
+## Historical main-branch notes (not this branch's import address)
+
 Four experimental Aroki sources for owner testing on the newer iOS engine.
 This is not the official stable collection and is not full playback certification.
 
