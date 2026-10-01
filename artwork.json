@@ -3,27 +3,48 @@
   "repositoryID": "aroki-artwork-tests",
   "name": "Aroki Logo Tests",
   "enabled": true,
-  "generatedAt": 1790874894,
+  "generatedAt": 1790876049,
   "connectors": [
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "anikoto-logo-test",
-      "id": "anikoto-logo-test",
+      "familyID": "synthetiq-anime-direct-logo-test",
+      "id": "synthetiq-anime-direct-logo-test",
       "language": "en",
       "manifest": {
-        "path": "connectors/anikoto-logo-test/connector.json",
-        "sha256": "7b646a341a980ed3d9331d5f55c69bcb0c70c20a1294c929399b673039055280"
+        "path": "connectors/synthetiq-anime-direct-logo-test/connector.json",
+        "sha256": "10b33fbc260bf5aa8236f978a5006bedf235afc3d30d3f10861ca4a72a66fd37"
       },
-      "minimumAppVersion": "0.1.0",
-      "name": "AniKoto (Logo Test)",
+      "minimumAppVersion": "2.0.38",
+      "name": "Synthetiq Flux (Logo Test)",
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.10",
+      "version": "0.1.2",
       "icon": {
-        "path": "logos/anikoto-logo-test.png",
-        "sha256": "1cec66bfd0e8a2a3a113b8d875875675e26ad396f5f9286a154e88c1b8d323e1"
+        "path": "logos/synthetiq-anime-direct-logo-test.png",
+        "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
+      }
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "anipm-logo-test",
+      "id": "anipm-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/anipm-logo-test/connector.json",
+        "sha256": "772319e63f1f81f9a25080b2ccd624aebccd27e25fed7d0b625e5350f482a9bc"
+      },
+      "minimumAppVersion": "1.2.0",
+      "name": "AniPM (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "0.1.1",
+      "icon": {
+        "path": "logos/anipm-logo-test.png",
+        "sha256": "f0398d476b2c8501275f8750e18068dd0a90aeb1840da8f79108065c70476dd6"
       }
     },
     {
@@ -92,27 +113,6 @@
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "synthetiq-one-logo-test",
-      "id": "synthetiq-one-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/synthetiq-one-logo-test/connector.json",
-        "sha256": "a13c91926fb553acde84bfc4d6eda1dc0cc135e4cfaba6813e3e0c5d5d598630"
-      },
-      "minimumAppVersion": "0.1.0",
-      "name": "Synthetiq One (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "1.2.11",
-      "icon": {
-        "path": "logos/synthetiq-one-logo-test.png",
-        "sha256": "67f400cc8c8712e706c1235166ea1ccf52cd41ee3c43374d3fecd3442080e8bd"
-      }
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
       "familyID": "synthetiq-anime-testing-logo-test",
       "id": "synthetiq-anime-testing-logo-test",
       "language": "en",
@@ -129,27 +129,6 @@
       "icon": {
         "path": "logos/synthetiq-anime-testing-logo-test.png",
         "sha256": "686a15b677c80264f95a880b621c984dcc9d9a5af13f9c62e492ae9a75ae12f3"
-      }
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
-      "familyID": "synthetiq-anime-direct-logo-test",
-      "id": "synthetiq-anime-direct-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/synthetiq-anime-direct-logo-test/connector.json",
-        "sha256": "10b33fbc260bf5aa8236f978a5006bedf235afc3d30d3f10861ca4a72a66fd37"
-      },
-      "minimumAppVersion": "2.0.38",
-      "name": "Synthetiq Flux (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "0.1.2",
-      "icon": {
-        "path": "logos/synthetiq-anime-direct-logo-test.png",
-        "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
       }
     },
     {
@@ -197,27 +176,6 @@
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "anipm-logo-test",
-      "id": "anipm-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/anipm-logo-test/connector.json",
-        "sha256": "772319e63f1f81f9a25080b2ccd624aebccd27e25fed7d0b625e5350f482a9bc"
-      },
-      "minimumAppVersion": "1.2.0",
-      "name": "AniPM (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "0.1.1",
-      "icon": {
-        "path": "logos/anipm-logo-test.png",
-        "sha256": "f0398d476b2c8501275f8750e18068dd0a90aeb1840da8f79108065c70476dd6"
-      }
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
       "familyID": "synthetiq-flux-no-logo-test",
       "id": "synthetiq-flux-no-logo-test",
       "language": "en",
@@ -251,6 +209,48 @@
       "icon": {
         "path": "logos/synthetiq-flux-broken-logo-test.png",
         "sha256": "107a430cb2032df349fc7c35cb7229e6a5bc545338b08456e413ee0afd9751bd"
+      }
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "anikoto-logo-test",
+      "id": "anikoto-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/anikoto-logo-test/connector.json",
+        "sha256": "7b646a341a980ed3d9331d5f55c69bcb0c70c20a1294c929399b673039055280"
+      },
+      "minimumAppVersion": "0.1.0",
+      "name": "AniKoto (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "0.3.10",
+      "icon": {
+        "path": "logos/anikoto-logo-test.png",
+        "sha256": "1cec66bfd0e8a2a3a113b8d875875675e26ad396f5f9286a154e88c1b8d323e1"
+      }
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "synthetiq-one-logo-test",
+      "id": "synthetiq-one-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/synthetiq-one-logo-test/connector.json",
+        "sha256": "a13c91926fb553acde84bfc4d6eda1dc0cc135e4cfaba6813e3e0c5d5d598630"
+      },
+      "minimumAppVersion": "0.1.0",
+      "name": "Synthetiq One (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "1.2.11",
+      "icon": {
+        "path": "logos/synthetiq-one-logo-test.png",
+        "sha256": "67f400cc8c8712e706c1235166ea1ccf52cd41ee3c43374d3fecd3442080e8bd"
       }
     }
   ]

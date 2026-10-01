@@ -3,24 +3,41 @@
   "repositoryID": "aroki-artwork-tests",
   "name": "Aroki Logo Tests",
   "enabled": true,
-  "generatedAt": 1790874894,
+  "generatedAt": 1790876049,
   "connectors": [
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "anikoto-logo-test",
-      "id": "anikoto-logo-test",
+      "familyID": "synthetiq-anime-direct-logo-test",
+      "id": "synthetiq-anime-direct-logo-test",
       "language": "en",
       "manifest": {
-        "path": "connectors/anikoto-logo-test/connector.json",
-        "sha256": "7b646a341a980ed3d9331d5f55c69bcb0c70c20a1294c929399b673039055280"
+        "path": "connectors/synthetiq-anime-direct-logo-test/connector.json",
+        "sha256": "10b33fbc260bf5aa8236f978a5006bedf235afc3d30d3f10861ca4a72a66fd37"
       },
-      "minimumAppVersion": "0.1.0",
-      "name": "AniKoto (Logo Test)",
+      "minimumAppVersion": "2.0.38",
+      "name": "Synthetiq Flux (Logo Test)",
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.10"
+      "version": "0.1.2"
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "anipm-logo-test",
+      "id": "anipm-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/anipm-logo-test/connector.json",
+        "sha256": "772319e63f1f81f9a25080b2ccd624aebccd27e25fed7d0b625e5350f482a9bc"
+      },
+      "minimumAppVersion": "1.2.0",
+      "name": "AniPM (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "0.1.1"
     },
     {
       "contentRating": "unknown",
@@ -76,23 +93,6 @@
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "synthetiq-one-logo-test",
-      "id": "synthetiq-one-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/synthetiq-one-logo-test/connector.json",
-        "sha256": "a13c91926fb553acde84bfc4d6eda1dc0cc135e4cfaba6813e3e0c5d5d598630"
-      },
-      "minimumAppVersion": "0.1.0",
-      "name": "Synthetiq One (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "1.2.11"
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
       "familyID": "synthetiq-anime-testing-logo-test",
       "id": "synthetiq-anime-testing-logo-test",
       "language": "en",
@@ -102,23 +102,6 @@
       },
       "minimumAppVersion": "2.0.38",
       "name": "Synthetiq Anime (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "0.1.2"
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
-      "familyID": "synthetiq-anime-direct-logo-test",
-      "id": "synthetiq-anime-direct-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/synthetiq-anime-direct-logo-test/connector.json",
-        "sha256": "10b33fbc260bf5aa8236f978a5006bedf235afc3d30d3f10861ca4a72a66fd37"
-      },
-      "minimumAppVersion": "2.0.38",
-      "name": "Synthetiq Flux (Logo Test)",
       "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
       "releaseTrack": "beta",
       "status": "active",
@@ -161,23 +144,6 @@
     {
       "contentRating": "unknown",
       "contentType": "video",
-      "familyID": "anipm-logo-test",
-      "id": "anipm-logo-test",
-      "language": "en",
-      "manifest": {
-        "path": "connectors/anipm-logo-test/connector.json",
-        "sha256": "772319e63f1f81f9a25080b2ccd624aebccd27e25fed7d0b625e5350f482a9bc"
-      },
-      "minimumAppVersion": "1.2.0",
-      "name": "AniPM (Logo Test)",
-      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
-      "releaseTrack": "beta",
-      "status": "active",
-      "version": "0.1.1"
-    },
-    {
-      "contentRating": "unknown",
-      "contentType": "video",
       "familyID": "synthetiq-flux-no-logo-test",
       "id": "synthetiq-flux-no-logo-test",
       "language": "en",
@@ -208,6 +174,40 @@
       "releaseTrack": "beta",
       "status": "active",
       "version": "0.1.2"
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "anikoto-logo-test",
+      "id": "anikoto-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/anikoto-logo-test/connector.json",
+        "sha256": "7b646a341a980ed3d9331d5f55c69bcb0c70c20a1294c929399b673039055280"
+      },
+      "minimumAppVersion": "0.1.0",
+      "name": "AniKoto (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "0.3.10"
+    },
+    {
+      "contentRating": "unknown",
+      "contentType": "video",
+      "familyID": "synthetiq-one-logo-test",
+      "id": "synthetiq-one-logo-test",
+      "language": "en",
+      "manifest": {
+        "path": "connectors/synthetiq-one-logo-test/connector.json",
+        "sha256": "a13c91926fb553acde84bfc4d6eda1dc0cc135e4cfaba6813e3e0c5d5d598630"
+      },
+      "minimumAppVersion": "0.1.0",
+      "name": "Synthetiq One (Logo Test)",
+      "releaseNotes": "Isolated logo QA fork. Provider graph unchanged; not a new playback certification. Main collection is unaffected.",
+      "releaseTrack": "beta",
+      "status": "active",
+      "version": "1.2.11"
     }
   ]
 }
