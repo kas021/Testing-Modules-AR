@@ -17,9 +17,9 @@
       },
       "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (Logo Test)",
-      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
+      "releaseNotes": "Temporarily retired from installation: reliability target not established; live audit stopped on provider rate limit. Files retained for future native/JavaScript work. Existing installs are not deleted.",
       "releaseTrack": "beta",
-      "status": "active",
+      "status": "retired",
       "version": "0.1.3"
     },
     {
@@ -153,9 +153,9 @@
       },
       "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (No Logo Test)",
-      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
+      "releaseNotes": "Temporarily retired from installation: reliability target not established; live audit stopped on provider rate limit. Files retained for future native/JavaScript work. Existing installs are not deleted.",
       "releaseTrack": "beta",
-      "status": "active",
+      "status": "retired",
       "version": "0.1.3"
     },
     {
@@ -170,9 +170,9 @@
       },
       "minimumAppVersion": "2.1.8",
       "name": "Synthetiq Flux (Broken Logo Test)",
-      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
+      "releaseNotes": "Temporarily retired from installation: reliability target not established; live audit stopped on provider rate limit. Files retained for future native/JavaScript work. Existing installs are not deleted.",
       "releaseTrack": "beta",
-      "status": "active",
+      "status": "retired",
       "version": "0.1.3"
     },
     {

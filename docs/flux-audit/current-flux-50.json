@@ -1,0 +1,402 @@
+{
+  "manifestSHA256": "80acac5f6dce676d83dffc3da8b43e86f4786200d9d74fd970015fb004962060",
+  "corpusSHA256": "d9c309abfcd4712aaf878de86027711a421caa9aaeacf0559dc47c3a278c6ed5",
+  "seed": 20260817,
+  "target": 38,
+  "complete": true,
+  "profile": "one representative middle episode, one fresh attempt, short native playback; no device/audio certification",
+  "results": [
+    {
+      "title": "Sword Art Online",
+      "id": "mal:11757",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1433.098,
+        "episodeCount": 25,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": 0.782835042,
+        "proofMode": "avplayer-playhead",
+        "query": "Sword Art Online",
+        "returnedTitle": "Sword Art Online",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 11.77
+    },
+    {
+      "title": "My Hero Academia Season 2",
+      "id": "mal:33486",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1430.1009999999994,
+        "episodeCount": 25,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": null,
+        "proofMode": "hls-segment-transportStream",
+        "query": "My Hero Academia Season 2",
+        "returnedTitle": "My Hero Academia Season 2",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 3.48
+    },
+    {
+      "title": "ONE PIECE",
+      "id": "mal:21",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1439.981,
+        "episodeCount": 1180,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": 0.760848056,
+        "proofMode": "avplayer-playhead",
+        "query": "ONE PIECE",
+        "returnedTitle": "ONE PIECE",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 6.94
+    },
+    {
+      "title": "Legend of the Galactic Heroes",
+      "id": "mal:820",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1624.3260000000012,
+        "episodeCount": 110,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": null,
+        "proofMode": "hls-segment-transportStream",
+        "query": "Legend of the Galactic Heroes",
+        "returnedTitle": "Legend of the Galactic Heroes",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 3.93
+    },
+    {
+      "title": "Assassination Classroom",
+      "id": "mal:24833",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1386.9369999999997,
+        "episodeCount": 22,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": null,
+        "proofMode": "hls-segment-transportStream",
+        "query": "Assassination Classroom",
+        "returnedTitle": "Assassination Classroom",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 3.66
+    },
+    {
+      "title": "Violet Evergarden: the Movie",
+      "id": "mal:37987",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 8406.492,
+        "episodeCount": 1,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": 0.792688126,
+        "proofMode": "avplayer-playhead",
+        "query": "Violet Evergarden: the Movie",
+        "returnedTitle": "Violet Evergarden: the Movie",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 6.15
+    },
+    {
+      "title": "Black Clover",
+      "id": "mal:34572",
+      "state": "passed",
+      "reason": "NATIVE_SHORT_ADVANCEMENT",
+      "proof": {
+        "candidateNumber": 1,
+        "durationSeconds": 1432.1009999999997,
+        "episodeCount": 170,
+        "familyID": "synthetiq-anime-direct-logo-test",
+        "playheadSeconds": null,
+        "proofMode": "hls-segment-transportStream",
+        "query": "Black Clover",
+        "returnedTitle": "Black Clover",
+        "similarity": 1,
+        "variant": "sub"
+      },
+      "elapsedSeconds": 4.23
+    },
+    {
+      "title": "Your Name.",
+      "id": "mal:32281",
+      "state": "blocked",
+      "reason": "RATE_LIMIT",
+      "elapsedSeconds": 1.47
+    },
+    {
+      "title": "GTO: Great Teacher Onizuka",
+      "id": "mal:245",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Gintama Season 3",
+      "id": "mal:28977",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Chainsmoker Cat",
+      "id": "mal:63403",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Tomodachi Game",
+      "id": "mal:50273",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Bleach",
+      "id": "mal:269",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "HAIKYU!! 3rd Season",
+      "id": "mal:32935",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Hunter x Hunter (2011)",
+      "id": "mal:11061",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Attack on Titan Final Season",
+      "id": "mal:40028",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "From Overshadowed to Overpowered: Second Reincarnation of a Talentless Sage",
+      "id": "mal:63508",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Gintama Season 2",
+      "id": "mal:9969",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "That Time I Got Reincarnated as a Slime Season 4",
+      "id": "mal:59970",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Food Wars! The Fourth Plate",
+      "id": "mal:39940",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "STEEL BALL RUN JoJo's Bizarre Adventure 1st STAGE",
+      "id": "mal:61469",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Welcome to Demon School! Iruma-kun",
+      "id": "mal:39196",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Princess Mononoke",
+      "id": "mal:164",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "BLACK TORCH",
+      "id": "mal:61169",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "The Disastrous Life of Saiki K.",
+      "id": "mal:33255",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Frieren: Beyond Journey\u2019s End Season 2",
+      "id": "mal:59978",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "JoJo's Bizarre Adventure: Golden Wind",
+      "id": "mal:37991",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "id": "mal:5114",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Weathering With You",
+      "id": "mal:38826",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Jaadugar: A Witch in Mongolia",
+      "id": "mal:61483",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "THE GHOST IN THE SHELL",
+      "id": "mal:58929",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Gintama",
+      "id": "mal:918",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Howl\u2018s Moving Castle",
+      "id": "mal:431",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "InuYasha",
+      "id": "mal:249",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Naruto: Shippuden",
+      "id": "mal:1735",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Clannad",
+      "id": "mal:2167",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "March comes in like a lion Season 2",
+      "id": "mal:35180",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Monster",
+      "id": "mal:19",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Tomorrow's Joe 2",
+      "id": "mal:2921",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "ERASED",
+      "id": "mal:31043",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Chainsaw Man \u2013 The Movie: Reze Arc",
+      "id": "mal:57555",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Hell\u2019s Paradise Season 2",
+      "id": "mal:55825",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "JUJUTSU KAISEN",
+      "id": "mal:40748",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Iron Wok Jan!",
+      "id": "mal:63100",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "That Time I Got Reincarnated as a Slime Season 2",
+      "id": "mal:39551",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Naruto",
+      "id": "mal:20",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Death Note",
+      "id": "mal:1535",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
+      "id": "mal:31933",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "The Girl Who Leapt Through Time",
+      "id": "mal:2236",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    },
+    {
+      "title": "Kaguya-sama: Love is War -Ultra Romantic-",
+      "id": "mal:43608",
+      "state": "blocked",
+      "reason": "RATE_LIMIT_STOP_NOT_TESTED"
+    }
+  ]
+}
