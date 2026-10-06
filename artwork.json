@@ -218,15 +218,15 @@
       "id": "anikoto-logo-test",
       "language": "en",
       "manifest": {
-        "path": "connectors/anikoto-logo-test/connector.json",
-        "sha256": "497d264050eba825db0a42469c068cb2fae0350af2ca4eb37951f22d225846dd"
+        "path": "connectors/anikoto-logo-test/releases/944f610e6ee342011ed35315c999237fce4d5ac72fd5300f818af55de5d15229/connector.json",
+        "sha256": "944f610e6ee342011ed35315c999237fce4d5ac72fd5300f818af55de5d15229"
       },
-      "minimumAppVersion": "2.1.8",
+      "minimumAppVersion": "2.1.19",
       "name": "AniKoto (Logo Test)",
-      "releaseNotes": "Featured-only high-resolution artwork test for Aroki 2.1.8+. Catalogue posters and playback graph unchanged. Main collection unaffected.",
+      "releaseNotes": "Testing-only optional-season repair. Requires Aroki 2.1.19+. Strict title/year/format/season matching retained; catalogue aliases and TV/TV_SHORT differences remain unresolved.",
       "releaseTrack": "beta",
       "status": "active",
-      "version": "0.3.11",
+      "version": "0.3.12",
       "icon": {
         "path": "logos/anikoto-logo-test.png",
         "sha256": "1cec66bfd0e8a2a3a113b8d875875675e26ad396f5f9286a154e88c1b8d323e1"
